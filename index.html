@@ -17,6 +17,24 @@
             margin-top: 50px;
         }
 
+        .blackmini{
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-right: 70px;
+        }
+        @media(min-width: 1025px){
+            .blackmini{
+                gap: 15px;
+                flex-direction: row;
+
+            }
+        }
+
         .mediabox{
             background-color: transparent;
             width: 100%;
@@ -34,13 +52,36 @@
             padding-right: 5px;
         }
 
+        .quicka{
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            padding-right: 10px;
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        @media(min-width: 1025px){
+            .quicka{
+                width: 500px !important;
+            }
+        }
+
         .quick{
+            background-color: transparent;
             width: 150px;
             height: 100%;
             display: flex;
             flex-direction: column;
             gap: 10px;
             margin-top: 30px;
+           
+        }
+        @media(min-width: 1025px){
+            .quick{
+                width: 200px !important;
+            }
         }
 
         .quick a{
@@ -54,23 +95,25 @@
 
         .mailsub{
             background-color: transparent;
-            width: 90%;
+            width: 100%;
             height: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 30px;
-            margin-left: 10px;  
+            margin-left: 0px;  
         }
 
         .email-container input{
             background-color: rgba(0, 0, 0, 0.301);
-            width: 190px;
+            width: 200px;
             height: 30px;
             color: white;
         }
 
         button{
             height: 35px;
-            width: 140px;
+            width: 150px;
             color: white;
             border: none;
             border-radius: 2px;
@@ -91,13 +134,29 @@
             height: 100%;
             display: flex;
             gap: 20px;
-            margin-left: 80px;
+            text-align: center;
+            margin-left: 100px;
             margin-top: 10px;
+        }
+        @media(min-width: 1025px){
+            .privacy{
+                margin-left: 300px; 
+            }
         }
 
         .privacy a{
             color: white;
             text-decoration: none;
+        }
+
+        .last{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         
 
@@ -105,11 +164,16 @@
 </head>
 <body>
     <div class="black">
-        <p>CoDa <h style="color: orange;">LEGEND</h></p>
 
-        <p>Creative director, Senior Developer & Strategist helping businesses worldwide transform 
+        <div class="blackmini">
+
+       <div class="quicka">
+
+         <b>CoDa <h style="color: orange;">LEGEND</h></b>
+
+        <h>Creative director, Senior Developer & Strategist helping businesses worldwide transform 
             their digital presence through exceptional design and development.
-        </p>
+        </h>
 
         <div class="mediabox">
             <div class="media">
@@ -128,6 +192,9 @@
                 <a href="#"><image src="https://thumbs.dreamstime.com/z/dribbble-icon-logo-beautiful-meticulously-designed-225149205.jpg?ct=jpeg" height="25px"></image></a>
             </div>
         </div>
+       </div>
+
+        <!--Quick-->
 
         <div class="quick">
             <b style="font-size: 13px;">QUICK LINKS</b>
@@ -141,6 +208,8 @@
             <a href="#">Contact</a>
         </div>
 
+        <!--Services-->
+
         <div class="quick">
             <b style="font-size: 13px;">SERVICES</b>
 
@@ -153,6 +222,8 @@
             <a href="#">Logo Design</a>
         </div>
 
+        <!--Contact-->
+
         <div class="quick">
             <b style="font-size: 13px;">CONTACT</b>
 
@@ -161,7 +232,10 @@
             <a href="#">+234 8168369507</a>
 
             <h>Lagos Nigeria</h>
+        </div>
         </div><br><br>
+
+        <!--Newsletter-->
 
         <h style="text-align: center;font-size: 22px;">Stay Updated<sub style="color: red;">*</sub></h>
 
@@ -179,12 +253,15 @@
 
         <div class="hr"></div>
 
-        <h style="text-align: center;margin-right: 20px;">© 2025 CoDa Legend Crafted with &#128150; this Christmas 🎄 Season</h>
+        <div class="last">
+
+            <h style="text-align: center;">© 2025 CoDa Legend Crafted with &#128150; this Christmas 🎄 Season</h>
 
         <div class="privacy">
             <a href="#">Privacy</a>
 
             <a href="#">Terms of Service</a>
+        </div>
         </div>
 
 
